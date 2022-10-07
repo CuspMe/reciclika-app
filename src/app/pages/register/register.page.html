@@ -1,0 +1,83 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-title>Register</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title color="success">What is your ID Number?
+      </ion-card-title>
+      <ion-card-content>
+        <ion-item>
+          <ion-label position="floating">ID Number</ion-label>
+          <ion-input></ion-input>
+        </ion-item>        
+      </ion-card-content>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title color="success">Infomation Details
+      </ion-card-title>
+      <ion-card-content>
+        <ion-item>
+          <ion-label position="floating">First Name</ion-label>
+          <ion-input type="name"></ion-input>
+        </ion-item>   
+        <ion-item>
+          <ion-label position="floating">Middle Name</ion-label>
+          <ion-input type="name"></ion-input>
+        </ion-item> 
+        <ion-item>
+          <ion-label position="floating">Last Name</ion-label>
+          <ion-input type="name"></ion-input>
+        </ion-item>   
+        
+        <ion-radio-group>
+          <ion-list-header>
+            <ion-label>
+              <h2>Sex</h2>
+            </ion-label>
+          </ion-list-header>
+          <ion-item>
+            <ion-label>Male</ion-label>
+            <ion-radio slot="start" value="male"></ion-radio>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label>Female</ion-label>
+            <ion-radio slot="start" value="female"></ion-radio>
+          </ion-item>
+        </ion-radio-group>
+
+        <ion-list>
+          <ion-item>
+            <ion-select interface="popover" placeholder="Course">
+              <ion-select-option value="BSIT">BSIT</ion-select-option>
+              <ion-select-option value="BEED">BEED</ion-select-option>
+              <ion-select-option value="BSED">BSED</ion-select-option>
+              <ion-select-option value="BSHM">BSHM</ion-select-option>
+              <ion-select-option value="BIT AT">BIT AT</ion-select-option>
+              <ion-select-option value="BIT ELX">BIT ELX</ion-select-option>
+              <ion-select-option value="BIT ELT">BIT ELT</ion-select-option>
+              <!-- <ion-select-option value="BSIT">Bachelor of Science in Information Technology</ion-select-option>
+              <ion-select-option value="BEED">Bachelor of Elementary Education</ion-select-option>
+              <ion-select-option value="BSED">Bachelor of Secondary Education</ion-select-option>
+              <ion-select-option value="BSHM">Bachelor of Science in Hospitality Management</ion-select-option>
+              <ion-select-option value="BIT AT">Bachelor of Industrial Technology Major in Automotive</ion-select-option>
+              <ion-select-option value="BIT ELX">Bachelor of Industrial Technology Major in Electricity</ion-select-option>
+              <ion-select-option value="BIT ELT">Bachelor of Industrial Technology Major in Electronics</ion-select-option> -->
+            </ion-select>
+          </ion-item>
+        </ion-list>
+
+      </ion-card-content>
+    </ion-card-header>
+  </ion-card>
+
+  
+  <ion-button color="success" size="full">Submit</ion-button>
+</ion-content>
